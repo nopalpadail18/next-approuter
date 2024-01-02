@@ -21,9 +21,11 @@ export default function ProductAdmin() {
     // console.log(await res.json());
   };
   return (
-    <div>
+    <div className="w-3/6 h-96 bg-gray-300 rounded-[12px] flex justify-center items-center mr-5">
       <h1>{status}</h1>
-      <button onClick={() => revalidate()}>Revalidate</button>
+      <button onClick={() => revalidate()} className="bg-blue-500 text-white p-3 m-5 rounded shadow">
+        Revalidate
+      </button>
     </div>
   );
 }
